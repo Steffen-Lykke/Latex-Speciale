@@ -1,0 +1,55 @@
+\chapter{Modeling strategy}
+
+
+
+\begin{table}[H] 
+\centering
+\caption{Bulk diffusion coefficient and radius of ions both stokes and Pauling \citep{hussainEffectIonSizes_NF_2006a} \citep{NFTheoryAnalytic_single_salt_2004}}
+	\begin{tabular}{l |c c c  }
+	Ion  & $D_b$ [$m^2/s]$ & Stokes [nm] & Pauling [nm]    \\ \hline
+	  \ce{Na+} &  $1.334 \cdot 10^{-9} $ & 0.184    & 0.095  \\
+	  \ce{Ca^{2+}}& $0.792 \cdot 10^{-9} $  &  0.309   &   0.099  \\
+	  \ce{SO4-} &$1.065 \cdot 10^{-9} $ &  0.230   & 0.290      \\
+	  \ce{Cl-}  &$2.032 \cdot 10^{-9} $ &   0.121  &   0.181   \\
+	  \ce{SiO2} &? &  ?   & ?  \\
+	        	\end{tabular} 
+	\label{tab:Radius_ions} 
+\end{table}
+
+\textbf{Silica }
+
+As the charge of silica change with pH, the pH is used to determine the fraction of charged silica present according to: 
+
+linear regression af Rejection af silica mod pH, for alle vores forsøg. 
+
+\begin{ceqn} 
+    \begin{align}
+     \ce{SiO2} Rejection = 38.183 \cdot pH - 335.39
+              \label{eq:}
+    \end{align} 
+\end{ceqn}  
+
+this linear regression is between pH 9.2 and 10.63 
+
+
+\textbf{DSPM-DE}
+
+\textcolor{blue}{Vi laver en tabel med de respektive exclusions factors og hvilken størrele de har for de repstive ioner. }
+
+\begin{table}[H] 
+\centering
+\caption{ exclusions factors for respective ions. }
+	\begin{tabular}{l |c c c  }
+	Ion  & Steric & Dielectric & Donnan ??     \\ \hline
+	  \ce{Na+} &  & &  \\
+	  \ce{Ca^{2+}}& & &  \\
+	  \ce{SO4-} & & &    \\
+	  \ce{Cl-}  & & &  \\
+	  \ce{SiO2} &? &  ?   & ?  \\
+	        	\end{tabular} 
+	\label{tab:ions_exclusion_factors} 
+\end{table}
+
+The DSPM-DE model is based on using certain parameters as model inputs.
+These parameters relate to to membrane properties (I), solution species (II) and the operating conditions (III).
+Regarding (I) the membrane properties can laragely be determined from experiments at various configurations (e.g rjection of uncharged solutes can be used to determine pore size) but such charaterization of our membrane is outside the project of this scope.

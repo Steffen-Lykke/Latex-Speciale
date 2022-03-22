@@ -1,0 +1,34 @@
+\section{Design of Experiments}
+When making experiments and performing analyses the experimenter makes decisions about which factors affect the experiment outcome and which are worthwhile to take into consideration when designing the experiment.
+A direct approach to analysing the chosen factors is by changing one factor (switching its level) while keeping the others constant.
+This is the best guess approach and can work well if the experimenter has intricate knowledge about the system.
+However there a many disadvantages to this approach.
+The One factor at a time approach consists of selecting baseline values for all factors and varying a single factor over all its levels while keeping all others constant.
+This however can miss interaction effects.
+
+The factorial approach to experiment design however allows one to take these effects into consideration by varying multiple factors together.
+The number of experiments or runs required in the factorial design  follows the equation  $n^k$
+where k is the number of factors you want to analyse and n is the number of levels, so if you want to change the flux and recovery of a system you have 2 factors and maybe you decide to have 3 values for each which would mean there would be 3 levels for each and the no. of experiments required would be $3^2=9$.
+The factorial experiment gives more information at fewer experiments and therefore is generally more efficient than other experimental designs, especially as the number of factors increases.
+This means that with increasing no of factors and levels the number of experiments required quickly rises to unpractical levels.
+The fractional factorial approach allows you to cut the amount of required experiments by only performing a \textit{fraction} of the 'total' amount of experiments (as would be in the factorial approach).
+The effect of a factor or the main effect is change in result based on a change in the level of the factor (for all results).
+Some factors may have some degree of interaction between them.
+If increasing a factor A results in a higher result at a low level of factor B but in a lower result at high B there is interaction between the two factors.
+
+
+$3^3$ design %from brunos book
+$3^3=27$ and has different factors at 3 different levels.
+this experiment has 26 degrees of freedom. 
+
+
+% \[
+% y_{ijk}=\mu+\tau_i+\beta_j+(\tau\beta)_{ij}+\varepsilon_{ijk}
+%     \left\{
+%     \begin{array}{1l}
+%       i=1,2,...,a\\
+% j=1,2,...,b\\
+% k=1,2,...,n
+%     \end{array}
+%     \right.
+% \]

@@ -1,0 +1,112 @@
+\section{Multi Factor Single Pass Experiment}
+
+\rod{Mangler: single pass og steady, disco om single pass i forhold til constant tryk og flux. }
+
+\textbf{Single-pass}
+For singlepass experiments the recovery was very low due to the very small membrane area at crossflow rate of 0.5 m/s
+\textcolor{blue}{En masse om steady state}
+
+%To gain knowledge about rejection of chloride and silica a multi factor experiment was designed. 
+A multi factor experiment was designed to investigate the rejection of \ce{Cl-} and \ce{SiO2} with changing environment.
+The species calcium, sodium, chloride, sulphate and silica previously identified as the most common in CT water will be investigated in this experiment, using the same lab-scale filtration set-up and filtration parameters as described in \textcolor{blue}{ref til et afsnit}, but with a single pass filtration configuration.
+As mentioned in \textcolor{blue}{Single pas afsnittet, eller flyt det her ned} a filtration with single pass leads to steady state conditions. 
+Rejection in steady state is useful for development of a model describing the rejection of NF filtration. \textcolor{blue}{elaborate}
+
+Based on literature and previous work done at Grundfos \textcolor{blue}{ref ref ref } it was expected that multiple factors impact the rejection of chloride and silica. 
+A factorial design approach was therefore used in this experiment.  
+%Regarding design of experiments a factorial design is the most efficient approach as multiple factors are investigated. 
+In a factorial design all possible combination of various factors at different levels are investigated, this allows investigation of both main effects of each factor, but also of possible interaction effects.  \citep{DesignOfExperiments_book_bruno}
+The factorial design is specifically chosen for this experiment as it is theorized based on \textcolor{blue}{ref til noget teori vi skriver }, that different factors will have interaction effects which influence the overall rejection of chloride and silica. 
+%When using factorial design the number of experiments rise quickly 
+The number of experiments or runs required in the factorial design  follows the equation  $n^k$ where k is the number of factors you want to analyse and n is the number of levels, so if you want to investigate 2 factors at 3 levels the no. of experiments required would be $3^2=9$.
+The factorial experiment gives more information at fewer experiments and thereforee is generally more efficient than other experimental designs e.g. best guess approach, especially as the number of factors increases.
+This also means that with increasing number of factors and levels the number of experiments required quickly rises to unpractical levels. \citep{DesignOfExperiments_book_bruno} 
+This experiment will focus on important factors which impact the rejection of chloride and silica, and replications of each run will therefore not be performed, instead the runs will be performed in random order to avoid \textcolor{blue}{systematic errors (eller hvad det rigtige ord er}. 
+
+
+%When identifying factors which might impact the rejection of chloride and silica and at which levels they are interesting to investigate, the number of runs should also be considered.
+%When identifying factors which impact the rejection of chloride and silica multiple other factors could be considered, but in order to keep the number of filtrations within the scope of this project the factors should be limited to those with possibly highest impact.
+As previously mentioned in \textcolor{blue}{tænker der kommer noget i teori} the anion combination greatly influences the rejection of the monovalent chloride ions. 
+This experiment will therefore investigate different ratios of chloride to sulphate, the two major anions present in CT water. 
+Silica most likely also influence the anion rejection specifically at high pH where silica can achieve a negative charge and can possibly impact the charge balance, \textcolor{blue}{as mentioned in theory omkring silica}.
+The cation ratio between calcium and sodium might also affect the rejection of chloride, but most CT operate with softened water, where the sodium to calcium ratio is high \textcolor{blue}{95\% hvad er den rigtigt}. 
+Therefore it was \textcolor{blue}{theorized/kilde} that this ratio might have a lower impact on the chloride and silica rejection, and will not be investigated in this experiment. 
+The factors which are theorized to have the largest impact and possible interaction effects are therefore: change in chloride to sulphate ratio, silica concentration and pH. 
+Apart from these factors other parameters of the experiment will be kept constant. 
+
+
+Due to the nature of the experiment where binary salts are added to RO-water as mentioned in \textcolor{blue}{et eller andet general procedure måske i appendix}, it was impossible to keep the sodium and calcium ratio equal for all experiments, while also varying the chloride sulphate ratio, pH and silica level as these factors influence each other. Therefor the sodium and calcium ratio will be kept high at >95\%. 
+%Furthermore when determining the different levels of each factor it was discovered that the factors influence each other, where higher silica concentration gives rise to increase in pH, and as pH was adjusted with hydrochloric acid  and sodium hydroxide this would influence the chloride and sulphate ratio. 
+As with the \textcolor{blue}{ref til multisalt forsøg} the pH will be adjusted by use of a carbonate-bicarboante buffer system, where a 0.008 M buffer with pH of 9.25 will be used for all experiment, and hydrochloric acid will be used to adjust to desired pH. This is done to keep the sodium content as equal as possible between experiments. 
+The calcium content will also be kept constant between experiment at 0.5 mM by addition of calcium chloride 
+The strength of the buffer at 0.008 M is based on the bicarbonate level found in authentic CT water.
+The levels of pH investigated will be pH 9.25, 9.5 and 9.75 based on the results from  \textcolor{blue}{ref til multisalt forsøg}. 
+%Based on \textcolor{blue}{ref til multisalt forsøg} it was found that when creating synthetic CT water it was necessary to use a carbonate-bicarboante buffer in order to keep the pH stable.  
+
+The chloride and sulphate ratio will be investigated at three different levels 25 \%, 50 \% and 75\% chloride. This will be done by having constant chloride concentration at 5 mM for all experiments, and adjusting the sulphate level accordingly to reach the desired ratio. 
+The concentration of 5mM was selected based on amount of hydrochloric acid needed to be added when adjusting the buffer from initial pH. 
+A chloride concentration of 5 mM is greater than what is expected in CT water. However as the aim of this project is to investigate performance of a batch filtration where the chloride is high, data on performance at high chloride concentration is still valuable. 
+%This chloride concentration at 5 mM is higher than expected for authentic CT water, but as this project strives to perform batch experiments where the feed concentration increase this higher concentration was deemed acceptable.
+%fastlagt alle har 5 mM Cl, er højt sat, men fordi vi håber at opkoncentere Cl samt vi skal have syre i for at justere pH hvor den største mængde er 3,6 mM 
+The resulting \ce{SO4} concentrations were 2.5 mM, 5mM and 15 mM which should allow data both on values matching CT water, and the situation of increased concentration due to batch filtration. 
+%This appraoch gives sulphate concentrations at 2.5 mM, 5mM and 15 mM, a broad range which can give a good indication of the rejection of sulphate with change in concentraiton. 
+%SO4 koncenration bliver også 'for høj', men vi antager (tester måske?) at den absolutte koncentration spiller en mindre rolle end forholdet imellem dem.
+The silica concentration will be investigated at high and low content. 
+Based on internal analysis of authentic CT water at Grundfos the lower content of silica was determined to be 75 mg/L. 
+The higher content was selected to be 125 mg/L as \textcolor{blue}{multi salt forsøget} indicated that the silica concentration increases when performing a batch filtration. 
+The silica concentration is only investigated at two levels to minimize the total runs needed.
+With two factors investigated at three levels and one factors at two levels this gives 18 runs in total, see \cref{tab:SPRR_factors_levels} for summary of factors and levels.  \textcolor{blue}{see appendix for full table of the experiment matrix}.
+
+
+\begin{table}[H]
+\centering
+\caption{Factors and levels for the multi factor single pass experiment}
+\label{tab:SPRR_factors_levels}
+\rowcolors{2}{gray!25}{white}
+\begin{tabular}{l|ccc}
+\rowcolor{gray!50}
+  &  & \textbf{Factors} &   \\ 
+  \rowcolor{gray!50}
+\textbf{Level}   & \textbf{Cl \%} & \textbf{pH} & \textbf{Silica mg/L}  \\ \hline
+1   & 25             & 9.25  & 125    \\
+2   & 50               & 9.5   & -      \\
+3  & 75               & 9.75  & 75    \\
+\end{tabular}
+\end{table}
+
+
+
+%When designing the experiment there are both controllable variable and uncontrollable variables
+Due to the nature of the experiment uncontrollable factors do occur, e.g. the filtration time need to reach steady state. 
+Steady state is an important premise for the single pass experimental set up, therefore each filtration will be run for as long time needed for steady state to occur. 
+In order to achieve steady state the experiments were run in different experimental configuration, as described in \textcolor{blue}{singlepass afsnittet eller flyt det her ned}. 
+%50 L synthetic CT water was made and if needed both concentrate and permeate was recycled to the feed tank
+50 L syntetic CT water was produced where a configuration with recycling of concentrate and permeate or no recycling could occur depending on filtration time needed to reach steady state. 
+
+
+
+%The three factors investigated is change in pH, silica concentration and chloride - sulphate ratio, both pH and chloride - sulphate ratio will be investigated at three levels where silica concentration will only be investigated at two levels.  
+
+
+% list: 
+% - pH valgt baseret på multi salt 
+% - silica basseret på det vi har målt ved opkoncentrering af multi salt 
+% - Cl - SO4 ratio prøver at få hele range. 
+% - hvilke ting kan vi mindre godt kontrollere 
+% - single pass? 
+% - forsøgs set up (recirculering ikke recirculering). 
+% - kort oprids forsøgs præmissen, hvilke andre ioner mm. 
+
+
+%CaSo4 værdien sættes til at være konstant på 0,5 mM da det er den højeste værdi hvis Cl skal ligge fast på 5 mM og vi har 75 \% Chloride. 
+
+
+
+
+
+
+
+
+
+
+

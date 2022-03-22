@@ -1,0 +1,62 @@
+\input{Setup/preamble.tex}
+
+
+\begin{document}
+\pagestyle{empty}
+\input{Setup/Frontpage} %Vores Forside
+%\input{Setup/AAU Title} %AAU titelblad med abstract
+%\input{Setup/Underskrift} 
+%\input{Afsnit/Intro/Forord}
+\input{Afsnit/Intro/Forkortelser}
+\newpage
+{\small\tableofcontents*} %Indholdsfortegnelse
+\thispagestyle{empty}
+
+\newpage
+%\tableofcontents* \thispagestyle{empty}
+\pagestyle{Uni}
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+%%%%%%Intro:
+\input{Afsnit/Intro/Introduction}
+%\input{Afsnit/Intro/Problemformulering}
+%\input{Afsnit/Intro/Scope}
+
+%%%%%%Teori:
+\input{Afsnit/Teori/NF}
+\input{Afsnit/Teori/Ions}
+\input{Afsnit/Teori/Carbonate_system}
+%Er du model?
+%\input{Afsnit/Model/Model}
+%\input{Afsnit/Model/CT_model}
+
+%%%%%Experimental:
+%\input{Afsnit/Experimental/Sebastians_rapport}
+\input{Afsnit/Experimental/Considerations}
+%\input{Afsnit/Experimental/Single_salt}
+%\input{Afsnit/Experimental/multisalt}
+%\input{Afsnit/Experimental/SPRR}
+%\input{Afsnit/Experimental/ICR}
+%\input{Afsnit/Experimental/Design}
+%
+\input{Afsnit/Experimental/Pilot_plant}
+
+%%%%Data processing:
+\input{Afsnit/Data/Singlesalt}
+\input{Afsnit/Data/Multisalt}
+\input{Afsnit/Data/rejection_ratio}
+\input{Afsnit/Data/ICR}
+\input{Afsnit/Experimental/Stradegy_of_model}
+
+%%%%%%Diskuterende:
+\input{Afsnit/Discussion/Discussion}
+\input{Afsnit/Discussion/Conclusion}
+\input{Afsnit/Discussion/Further_Studies}
+
+
+\footnotesize
+\bibliography{Litteratur}
+
+\label{mylastpage}
+\end{document}

@@ -1,0 +1,19 @@
+\begin{tikzpicture}[scale=0.8]
+\coordinate (A) at (13,0);
+\coordinate (B) at (2,2);
+\coordinate (C) at (3.5,3.5);
+
+\def \x {3.5cm};
+\def \y {1cm};
+%\draw[line width=2pt,fill=blue!20] (0,0) circle (\x);
+\draw[shading = axis,rectangle, left color=blue!40, right color=white,shading angle=135,line width=2pt,fill=blue!20] (0,0) circle (\x);
+\shade[ball color=black!50] (canvas polar cs:angle=160,radius=\x-\y) circle (\y);
+%\draw[fill=black!40] (canvas polar cs:angle=160,radius=\x-\y) circle (\y);
+\draw[line width=2pt,dashed] (0,0) circle (\x-\y);
+
+\draw[line width=2pt] [-{Latex[scale=1]}](0,0)  -- node[anchor=south] {\huge $r_p$}(canvas polar cs:angle=40,radius=\x);
+\draw[line width=1.5pt] [-{Latex[scale=1]}](canvas polar cs:angle=160,radius=\x-\y)node[anchor=west] {\huge\textcolor{white}{$r_i$}}  -- (canvas polar cs:angle=160,radius=\x);
+%
+
+
+\end{tikzpicture}

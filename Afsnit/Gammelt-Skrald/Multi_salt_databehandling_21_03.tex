@@ -1,0 +1,267 @@
+\chapter{Batch: Simulated CT Solution}
+
+\textit{Further experiments with batch filtration was performed using simulated CT reservior water. The content of the simulated CT water was based on the primary species present in water from a CT reservoir being \ce{Ca^{2+}},  \ce{Na+}, \ce{Cl-}, \ce{SO4^{2-}} and \ce{SiO2}.
+The aim of these filtrations was to investigate how pH influence the rejection of the respective ions. 
+\textcolor{blue}{Noget med ICR her måske den dele op i 2}
+}
+
+
+\input{Afsnit/Experimental/multisalt}
+
+\section{Data Processing }
+
+\rod{skal vi gøre som bruno og oplyse 1 samlet rejection for hver ion?\\
+Vi mangler usikkerheder på IC + Silica\\
+Fejlkilder der er udeladt:\\
+Water mystery.\\
+HCl content used to adjust pH before experiment was not measured.
+}
+
+The slight differences between the three CT composition experiments of note is that the middle pH experiment was shorter, and thereby would not have time to reach the same concentrations.
+The first samples are taken at a water recovery of 35 \% for low and middle pH and a 25\% for high pH.
+Samples were then collected somewhat evenly until filtration stopped.
+Due to large dead volume of the system and uncertainties the last data point differs between each experiment.
+Therefore the last samples before filtration stopped where taken at 87\%, 76\% and  80\% for low, middle and high pH levels, respectively
+
+The initial pH of each experiment was slightly of the targeted pH and increased during each experiment (increase of $\sim$0.12 pH unit).
+The pH increase is likely a result of the increasing concentration of silica as the filtration progresses.
+% For the low pH filtration the increase was from 9.31 to pH 9.44.
+% The middle pH experiment saw increase from 10.08 to 10.24 but the experiment duration was slightly shorter.
+% In the high pH experiment the increase was from pH 10.47 to pH 10.59.
+
+TMP increased during filtration for all experiments, likely a result of increased osmotic pressure of the feed solution.
+
+
+
+\subsection{Bicarbonate}
+
+The complex ion solutions were analysed for their bicarbonate content by measuring total alkalinity \rod{Tjek op på dette!}.
+Samples were taken from the feed container in each experiment at various times during the filtrations and are plotted on \Cref{fig:bicarbonate_multi_salt}.
+
+For the solutions with middle and high pH levels bicarbonate content is initially ~380 \si{\milli\gram\per\liter} whereas the low pH solution initially has a slightly greater concentration at 465 \si{\milli\gram\per\liter}
+It is generally observed that bicarbonate concentration increases as filtration progresses at all pH values.
+For low and middle pH levels the bicarbonate content increases to 998 and 963 \si{\milli\gram\per\liter} bicarbonate, respectively.
+The bicarbonate concentration for the high pH matrix initially doesn't increase during the first six hours.
+The final value, however, was 1220 \si{\milli\gram\per\liter} which is the maximum possible value for the alkalinity analysis.
+
+This large increase in measured bicarbonate may be a result of increasing silica concentrations as it was speculated was the case in the binary ion experiment \rod{måsk en ref}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Billeder/data/multi_salt/bicarbonate_all_pH.png}
+    \caption{Bicarbonate concentration as determined by alkalinity}
+    \label{fig:bicarbonate_multi_salt}
+\end{figure}
+
+\subsection{Silica}
+Analysed by Hach Lange kits as in binary experiment \rod{stats}
+
+The silica rejections increases with pH of the experiment, see \Cref{fig:silica_rejection_multi_salt}.
+For the lowest pH experiment rejection is first 21.2\% then decreases as the filtration progresses to 8.8\% at 60\% water recovery, before increasing to 27.4 \%. 
+For the experiment middle pH silica rejection increases steadily from 47.5\% to 58.7\%
+In the highest pH experiment rejection is even higher: initially 64\% at 25\% water recovery and reaching 72.7\% silica rejection. 
+
+This is likely a result of an increased fraction of charged silica species present at higher pH values, which are more easily retained by the negative membrane surface(which may also be affected by solution pH).
+In all three experiments silica rejection increases as filtration progresses likely due to the increase in pH.
+
+
+
+
+
+
+% 0.71 0.92
+% 0.81 1.31
+% 0.82 1.63
+
+
+% Numbers:
+% lowest pH: 21.2 ->27.4 with a dip to 8.8
+% For the experiment middle pH 47.5 ->58.7
+% highest pH: 64 ->72.7 (and final measurement dips to 71.3)
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Billeder/data/multi_salt/silica_rejection.png}
+    \caption{Rejection of silica at different pH values}
+    \label{fig:silica_rejection_multi_salt}
+\end{figure}
+
+The measured bicarbonate by alkalinity is likely not independent from the concentration of silica.
+In order to better understand how these correlate alkalinity/bicarbonate concentration has been plotted as a function of silica concentration in \Cref{fig:multi_salt_bicarbonate_+_silica_less_ugly}.
+For the two lowest pH values there is a linear relationship between silica content and measured bicarbonate.
+The data for the highest pH shows deviation with its second data point which has and increase of 33\% silica without any correlating increase in measure bicarbonate.
+Ignoring this data point the correlation would follow that of the middle pH experiment.
+
+% \subsection{Bicarbonate and silica}
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=0.8\textwidth]{Billeder/data/multi_salt/silica_bicarb_individual.png}
+%     \caption{Bicarbonate concentration correlates with silica concentration}
+%     \label{fig:multi_salt_bicarbonate_silica_releation_individual}
+% \end{figure}
+
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=0.8\textwidth]{Billeder/data/multi_salt/silica_bicarb_samlet.png}
+%     \caption{}
+%     \label{fig:multi_salt_bicarbonate_+_silica_less_ugly}
+% \end{figure}
+
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=0.8\textwidth]{Billeder/data/multi_salt/pH_9.2_silica_bicarb.png}
+%     \caption{Her kun for enkelt pH (9.2)}
+%     \label{fig:multi_salt_pH_9.2_bicarbonate_+_silica}
+% \end{figure}
+%  Individuelt er der linær relation mellem silica indhold og målt bicarb
+
+% ¤¤¤ION REJECTIONS FOR EXPERIMENTS INDIVIDUALLY¤¤¤
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=0.8\textwidth]{Billeder/data/multi_salt/pH_9.2_ion_rejection.png}
+%     \caption{Rejection during experiment with pH = 9.2}
+%     \label{fig:multi_salt_pH_9.2_ion_rejection}
+% \end{figure}
+
+
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=0.8\textwidth]{Billeder/data/multi_salt/pH_10_ion_rejection.png}
+%     \caption{Rejection during experiment with pH = 10}
+%     \label{fig:multi_salt_pH_10_ion_rejection}
+% \end{figure}
+
+
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=0.8\textwidth]{Billeder/data/multi_salt/pH_10.5_ion_rejection.png}
+%     \caption{Rejection during experiment with pH = 10.5}
+%     \label{fig:multi_salt_pH_10.5_ion_rejection}
+% \end{figure}
+% ¤¤¤                                              ¤¤¤
+\subsection{Ionic Rejection}
+Samples were taken from feed tank and permeate and analysed by IC similar to in the binary ion experiment \rod{stats + ref}
+The ion rejections for the tree pH levels are shown on \Cref{fig:multi_salt_pH_ion_rejections_samlet_med_sulfat_og_silica} along with the silica rejection.
+
+The sulphate concentrations of the permeate samples did not exceed the LOD of 5 mg/L and this value will be used to estimate rejections.
+Assuming permeate concentrations of 5 mg/L as a worst possible case sulphate rejection goes from 95 to 98 percent during filtration at all pH values
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Billeder/data/multi_salt/multisalt_ion_rejections_with_sulphate_and_silica.png}
+    \caption{Ion Rejections for all complex ion filtrations, with sulphate rejection assuming [SO4] = 5 mg/L for permeate at all times.}
+    \label{fig:multi_salt_pH_ion_rejections_samlet_med_sulfat_og_silica}
+\end{figure}
+
+
+
+
+
+\textbf{Chloride:}
+Chloride rejection decreases as filtration progresses for all pH levels.
+For the low pH the first measured rejection (35\% water recovery) is just below 0 and it reaches -13\% which is its lowest value at 80\% water recovery.
+The middle pH has Cl rejection of 3\% at 35\% water recovery which decreases to its final value of -30\% at a the final water recovery of 76\%.
+For the high pH level the first measured rejection was 5\% and this decreased to -56\% after 80\% water recovery.
+
+% pH 9.2: -0.007 ->-0.096
+% pH 10: 0.03 ->-0.3
+% pH 10.5: 0.05 ->-0.56
+It is clearly evident that chloride rejection decreases dramatically with increased pH for the values later on during the filtrations. 
+The presence of other anions present is assumed to be the major cause for poor rejection of Chloride.
+Assuming that sulphate rejection is somewhat unaffected by pH change, the major reason for decreased Cl rejection with pH increase is that a larger fraction of silica is present on an ionic form.
+For all pH values rejection of the other ions (i.e. not Cl- or SiO2) increases slightly as each filtration progresses.
+
+\textbf{Sodium:}
+Sodium rejection increases with higher pH
+At high pH there is greater Na rejection than Ca rejection unlike at the other two pH levels.
+
+At filtration with the low pH level Na rejection starts at 49.7\% and increases to 59\%.
+For the middle pH the first rejection value is 71.2\% and the increase is less substantial reaching 75.2\%
+At the highest pH value there is a high initial Na rejection of 78.5\% rising slightly to 82.3\%.
+
+% Feed concentrations:
+% 344->626
+% 361 -> 808
+% 404 -> 1145
+
+
+\textbf{Sulphate:}
+The sulphate rejection is as previously mentioned based on constant permeate concentration of 5 mg/L.
+Under this assumption the rejection is 95-98\% during each filtration and is unaffected by pH changes.
+
+% Feed Sulphate concentrations:
+% low pH: 98 -> 311
+% middle pH: 71-> 274
+% High pH: 69 -> 291
+% based on concentration profile pH 10.5 has the largest increase in sulphate concentration during the filtration, but pH 9.2 reaches highest final concentration. 
+
+
+\textbf{Calcium: }
+For unknown reasons feed Ca concentrations are much greater in the low pH experiment than the other two experiments.
+Initial concentrations are 24 mg/L in the low pH experiment but only 3.4 mg/L in the other two.
+
+Rejection is similar between low and middle pH but is lower in the high pH experiment where it is lower than sodium rejection
+For the low pH experiment rejection starts at 78\% and ends up at a value of 84, ignoring the last sample.
+the middle pH calcium rejection is 82\% at water recovery of 35\% progressing to 88\%.
+In the high pH experiment Ca rejection is 74\% to 77\% and thus is lower than the other two experiments for the entire duration.
+The likely cause of the Ca rejection pH dependence is that an increasing flux of negative ions through the membrane result in a larger Donnan effect causing increased transportation of positive ions over the membrane.
+The preferential transport of Ca over Na ions can be explained by the charge difference.
+As Ca is divalent and has a similar radius to Na \rod{havde du fundet deres radius?} Ca has a greater charge density and would be affect by electrical potential to a greater extent.
+
+\subsection{ICR}
+For the additional experiment conducted everything is bad.
+
+pH of the feed solution was 9.75 during the filtration.
+
+Silica rejection was constant at 34\% rejection throughout the filtration.
+As expected silica rejection was between the low and middle pH levels of the three CT experiments, further agreeing that silica rejection is primarily controlled by solution pH.
+Sodium and calcium rejection was also between the performance of the low and middle pH filtrations.
+
+The primary focus for the experiment was the  performance of the first part of the filtration, especially chloride rejection.
+There is however no clear trend that can be seen from the chloride rejection in the first part of filtration.
+Rejection increases and decreases multiple times and only shows predictable behaviour after a water recovery of 40\%, which is when sampling frequency was lowered.
+The low quality of the samples may therefore be caused by the sampling frequency during the first part of filtration.
+The limited water flux through the membrane may mean that the system needs longer between sampling to produce useful results.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{Billeder/data/multi_salt/ICR_1_rejection.png}
+    \caption{rejection of ions for the ICR experiment}
+    \label{fig:my_ICR_rejection}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+% Feed Ca concentrations:
+% pH 9.2: 24 -> 46 -> 30
+% pH 10: 3.2 -> 19
+% pH 10.5: 3.6 -> 7.8
+
+
+
+
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=0.8\textwidth]{Billeder/data/multi_salt/multisalt_ion_rejections.png}
+%     \caption{Ion Rejections for all multisalt experiments}
+%     \label{fig:multi_salt_pH_ion_rejections_samlet}
+% \end{figure}
+
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=0.8\textwidth]{Billeder/data/multi_salt/multisalt_ion_rejections_with_sulphate.png}
+%     \caption{Ion Rejections for all multisalt experiments, now with sulphate rejection assuming [SO4] = 5 for permeate at all times}
+%     \label{fig:multi_salt_pH_ion_rejections_samlet_med_sulfat}
+% \end{figure}
+
+

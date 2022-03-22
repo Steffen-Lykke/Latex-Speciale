@@ -1,0 +1,60 @@
+\section{Model}
+\rod{Få overblik over model teori, samt hvad afsnittet skal handle om (i januar)}
+
+\textcolor{blue}{Formål: at lave en model for rejection af de forskellige species som kan forudsige performance ud fra start concentration. Derefter kombinere denne med en model af et køletårn således denne kan modelleres i samspil med et NF system som ultimativt har til formål at øge COC}
+
+
+
+
+ \prettyinpink{Herunder noget om CP i NF modeller, jeg ved ikke om vi skal have det med}
+"Usual models available in literature do not take account of the polarisation
+phenomenon"
+"considered the polarisation
+layer as an infinitely porous "membrane" (i.e. with a porosity
+equals to unity and without steric hindrance) and they have
+described the multi-ionic transport within this layer by the
+Nernst-Planck equation." 
+ \citep{deonConcentrationPolarizationPhenomenon2013}
+ 
+ 
+% \textbf{SUPER MODEL}\\
+% Include the osmotic pressure. 
+% Calculate Rejection based on current concentration in feed / at membrane wall
+
+% Generally for modelling of NF transport there are 2 different types of model: mechanistic models and irreversible thermodynamics descriptions. 
+% The first asummes some nanoporos structure in the material with some exclusion based on charge,size and dielectric(?)[DSPM,SCPM,TMS]. The latter describes ion transport by gradients of electrochemial potentials and volume flows.[spiegler-Kedem, solution-diffusion]
+% \textbf{NF solution-diffusion model:} where molecules dissolve in and diffuse through separation layer of membrane. 
+
+% List of different approaches to modeling the transport of ionic species through NF membranes:
+% \textbf{Donnan steric pore model with dielectric exclusion (DSPM DE)}
+% 	Pore-flow model w/ rejection mechanisms: donnan exclusion(electric),steric (size)exclusion,dielectric exclusion (due to image charges and the Born solvation energy barrier associated with the ion shedding its hydration shell to enter the membrane pore)\\
+% 	modified Nernst Planck model. 
+	
+% 	\textbf{Modified DSPM fra artikel }
+% 	From bulk through film layer, membrane interface and through membrane.
+% \textbf{solution-diffusion-electro-migration model SDEM} Models ion transport based on electric fields arising from differing transmembrane permeances of anions and cations
+
+
+\begin{table}[H]
+\centering
+\caption{parametre for modellen. }
+	\begin{tabular}{l|c|c|c}
+     Parameter & Symbol & Value  & Unit \\ \midrule
+     Tank volume & V & ? & L \\
+     Recovery & Rec & ?(70-90) &  \\
+     Concentration \ce{Cl-} &  & 2.5 & mM \\
+     Concentration \ce{SO4^{-2}} & & 0.64  & mM \\
+     Concentration \ce{Na+} &  & 10.81 & mM \\
+     Concentration \ce{Ca^{2+}} &  & 0.35 & mM \\
+     Concentration \ce{SiO2} &  & 0.68 & mM \\
+     Concentration \ce{HCO3-} &  & 7.29 & mM \\
+     Membrane active area & $A_m$ & 0.05 or 0.053 & $m^2$ \\
+     Water permeability  &  & ? &  \\
+     Crossflow &  & 0.5 & m/s \\
+     TMP &  & lige nu 2.5-2.7  & bar \\
+     Temperature &  & 20-25 & $\decC$ \\
+      
+	\end{tabular}
+	\label{Tab:model_parameter}
+\end{table}
+

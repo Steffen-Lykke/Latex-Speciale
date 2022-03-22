@@ -1,0 +1,77 @@
+\def \f {2.235}
+\def \d {0.3}
+    \pgfplotsset{compat=1.16,width = 15cm,height=9cm}
+% \begin{tikzpicture}
+%     \begin{semilogxaxis}[log ticks with fixed point]
+%         [
+%             scale only axis,
+%           % ymin=0.4, ymax=2.1,
+%             xmin=1e-4, xmax=0.1,
+%         ]
+%         \addplot {2};
+%     \end{semilogxaxis}        
+% \end{tikzpicture}
+
+
+\begin{tikzpicture}[scale=0.8]
+\coordinate (A) at (2.235,1);
+\coordinate (B) at (2.98,1);
+  \begin{semilogxaxis}[
+  axis background/.style={fill=gray!10},
+    xmin=0.0001, xmax=100,
+    ymin=0, ymax=10,
+    log basis x=10,
+    log ticks with fixed point,
+    ytick=\empty,
+    xlabel=Particle size ($\mu m$),
+    grid=major,
+    ]
+  % \addplot[mark=*] coordinates {
+  % (0.1,6)};
+    \node[label={0:{\scriptsize{Coronavirus}}},diamond,fill,inner sep=1.5pt] at (axis cs:0.08,6) {};
+    
+     \node[label={100:{\scriptsize{             Bacteriophage MS2}}},diamond,fill,inner sep=1.5pt] at (axis cs:0.027,6.4) {};
+    
+    \node[label={315:{\scriptsize{E. coli}}},diamond,fill,inner sep=1.5pt] at (axis cs:1.2,6) {};
+     
+     \node[label={0:{\scriptsize{Enterococci}}},diamond,fill,inner sep=1.5pt] at (axis cs:1.6,6.4) {};
+    
+     \node[label={45:{\scriptsize{Rotavirus}}},diamond,fill,inner sep=1.5pt] at (axis cs:0.072,6.4) {};
+     
+      \node[label={60:{\scriptsize{Yersinia}}},diamond,fill,inner sep=1.5pt] at (axis cs:0.65,6.4) {};
+      
+      \node[label={90:{\scriptsize{$Cl^{-}$}}},diamond,fill,inner sep=1.5pt] at (axis cs:0.000181,6.4) {};
+      
+      \node[label={315:{\scriptsize{$SO_4^{2-}$}}},diamond,fill,inner sep=1.5pt] at (axis cs:0.000242,6.4) {};
+  \end{semilogxaxis}
+%long rectangles
+  \filldraw[gray!30] (0.016,\d)rectangle(13.41,3*\d);
+  \filldraw[magenta!100!white!50] (0.016,4*\d)rectangle(5.2*\f,6*\d);
+  \filldraw[magenta!100!white!50] (3.9*\f,0.1+6*\d)rectangle(6*\f,0.1+8*\d);
+%filtration
+  \filldraw[violet!70] (0.016,\d) rectangle (\f,3*\d);
+  \filldraw[violet!70] (0.016+\f,\d) rectangle (2.35*\f,3*\d);
+%  \filldraw[green!50!black] (0.016+5*\f,\d) rectangle (6*\f,3*\d);
+  \filldraw[violet!70] (0.016+2.8*\f,\d) rectangle (5*\f,3*\d);
+%Filtrate  
+  \filldraw[cyan!70!black] (0.016,9*\d) rectangle (0.6*\f,11*\d);
+  \filldraw[cyan!70!black] (0.95*\f,9*\d) rectangle (2.3*\f,11*\d);
+  \filldraw[cyan!70!black] (2.4*\f,9*\d) rectangle (3.4*\f,11*\d);
+  \filldraw[cyan!70!black] (3.5*\f,9*\d) rectangle (4.95*\f,11*\d);
+  \filldraw[cyan!70!black] (5.3*\f,9*\d) rectangle (6*\f,11*\d);  
+%nodes 
+    \draw (0.5*\f,2*\d) node {RO NF};
+    \draw (1.65*\f,2*\d) node {UF};
+    \draw (3.9*\f,2*\d) node {MF};
+%    \draw (5.5*\f,2*\d) node {P/F?};
+    \draw (2.75*\f,5*\d) node {Membranes};
+    \draw (5*\f,0.1+7*\d) node {Fibrous Media};
+    \draw (0.25*\f,+10*\d) node {Ions};
+    \draw (1.6*\f,10*\d) node {Proteins};
+    \draw (2.9*\f,10*\d) node {Viruses};
+    \draw (4.2*\f,10*\d) node {Bacteria};
+    \draw (5.65*\f,10*\d) node {Pollens};
+    
+\draw (6.705,8) node {Filtration and selected species};
+  %\draw (2.24/2,
+  \end{tikzpicture}

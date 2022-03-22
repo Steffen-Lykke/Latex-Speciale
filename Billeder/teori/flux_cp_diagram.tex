@@ -1,0 +1,28 @@
+\begin{tikzpicture}[scale=0.7]
+\coordinate (A) at (8,0);
+\coordinate (B) at (5,2);
+\coordinate (C) at (8,5);
+\draw  (0,0) node[below]{$x$} --(A) node[below]{0};
+\draw (0,2) node[above]{$c_f$} -- (B);
+\draw[dashed] (B)--+(0,5)--+(0,-2) node[below]{$\delta$};
+\draw[pattern=north east lines, pattern color=blue] (A) rectangle +(0.8,6);
+\draw (B) to[out=0,in=270] (C) node[left]{$c_m$};
+\draw (8.8,0.5)--node[above]{$c_p$}++(2,0);
+\draw[   decoration={markings,
+        mark=at position 1 with {\arrow[scale=2.5,>=latex]{>}}
+        },
+    postaction={decorate}] (5.5,4)--node[above]{$J\cdot c$}++(1.5,0);
+\draw[   decoration={markings,
+        mark=at position 1 with {\arrow[scale=2.5,>=latex]{>}}
+        },
+    postaction={decorate}] (7.5,1)--node[above]{$D\cdot \frac{dc}{dx}$}++(-1.5,0);
+
+\draw[   decoration={markings,
+        mark=at position 1 with {\arrow[scale=2.5,>=latex]{>}}
+        },
+    postaction={decorate}] (9.5,4)--node[above]{$J\cdot c_p$}++(1.5,0);
+
+\node at (2,6) {Bulk Feed};
+\node at (6.6,6.2) {Boundary};
+\node at (6.6,5.8) {Layer};
+\end{tikzpicture}

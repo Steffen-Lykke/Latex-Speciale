@@ -1,0 +1,80 @@
+\section{Experimental Method}
+%\prettyinpink{Noget med water recovery}
+
+
+
+
+The concentration of the specific ions in the simulated CT water was based on samples of authentic CT reservoir water measured in relation to internal work within Grundfos, and is summarized in \cref{tab:multisalt_composition}. 
+This experiment will investigate the rejection of ions with changing environment, 10 L simulated CT water was filtered in a batch process similar to filtration of the binary ions.
+The effect of pH on the membrane rejection was investigated, with pH at three different levels: pH 9.2, pH 10, and pH 10.5. 
+The pH values investigated are chosen to be in a range that would likely impact the charge of silica species and thereby their rejection as mentioned in \cref{Silica_teori_ladning}. 
+This best guess approach is not ideal from an experimental design point of view, but allows one to quickly gain information on how the system responds to the change in pH.
+In order to regulate, ensure stable pH and mimic the buffering capacity of authentic CT reservoir water, a carbonate-bicarboante buffer solution was used when producing the simulated CT water. 
+This was deemed necessary due to results of batch filtrations with binary ion solutions, see \cref{Kapitel_batch_single_salt}.
+%CT water has a buffer capacity which is not replicated when the simulated CT water exclusively consists of salts added to RO-water.
+A 0.008 M carbonate-bicarboante buffer was used as the base for all simulated CT water and adjusted to the desired pH before filtration. 
+%This strength of 0.008 M was based on bicarbonate concentration in authentic CT water. 
+
+
+
+%This was chosen to examine how membrane performance (i.e. rejection of ions) changes as filtration progresses and ion concentrations increase in the feed stream.
+
+% The goal was to see the impact on Cl and silica rejection which should be able to be investigated.
+% The Cl rejection is expected to be dependent on the concentration of other species present in the feed tank / at the membrane wall \textcolor{blue}{ref til teori/ explanation} and therefor will likely change as the filtration progresses.
+% Silica rejection however, is expected to be less dependant on the matrix effects, but instead on the solution pH as this is responsible for the degree to which silica is charged.
+
+
+
+\begin{table}[H]
+\centering
+\caption{Ionic compositions of authentic CT water compared to selected composition in simulated CT water. The \ce{HCO3-} and \ce{Na+} concentration change based on desired pH.}
+\label{tab:multisalt_composition}
+\rowcolors{2}{gray!25}{white}
+\begin{tabular}{r|cccc}
+\rowcolor{gray!50}
+\textbf{Ion Species}   & \textbf{Authentic CT water} & \textbf{ID: 1} & \textbf{ID: 2} &\textbf{ ID: 3} \\ \hline
+\ce{Ca^{2+}} {[}mM{]}   & 0.35               & 0.40   & 0.40  & 0.40    \\
+\ce{Na+} {[}mM{]}   & 10.81              & 11.77  & 14.76 & 16.63   \\
+\ce{Cl-} {[}mM{]}   & 2.48               & 2.50   & 2.50  & 2.50    \\
+\ce{SO_4^{2-}} {[}mM{]}  & 0.64               & 0.70   & 0.70  & 0.70    \\
+
+\ce{SiO2} {[}mM{]} & 0.68               & 0.70   & 0.70  & 0.70    \\
+\ce{HCO_3^-}{[}mM{]}  & 7.29               & 6.07   & 3.08  & 1.21   \\
+pH & & 9.2&10 &10.5 \\
+\ce{Cl-}/Anion ratio &&&& \\
+\end{tabular}
+\end{table}
+
+
+
+\textbf{ICR (Increase Chloride Rejection)}
+
+To further investigate the rejection of chloride additional filtrations with varying \ce{Cl^{-}/(SO4^{2-}+Cl-)} ratio was performed, by varying the \ce{SO4^{-2}} concentration see \cref{tab:ICR_phase_1_conc}. 
+For \textcolor{blue}{1} filtration more frequent sampling was performed, every 20 min for the first 6 hours, this was done to investigate the development of the chloride rejection during the start of the filtration. 
+
+\textcolor{blue}{noget med vores permeat forsøg...}
+
+%A 10 L batch filtration with sampling every 20 min for 6 hours of both feed and permeate. Where  "the complex ion matrix" filtrations had sampling after 2.5 or 3 hours.
+%The filtration carried out with the same procedure as for "the complex ion matrix" with the concentrations presented in \cref{tab:ICR_phase_1_conc} and at pH 9.5. 
+
+\begin{table}[H]
+\centering
+\caption{Ionic Compositions of Matrices}
+\label{tab:ICR_phase_1_conc}
+\rowcolors{2}{gray!25}{white}
+\begin{tabular}{l|cccc}
+\rowcolor{gray!50}
+\textbf{Ion Species}   & \textbf{ID: 4} &\textbf{ID: 5}  \\ \hline
+\ce{Na+} {[}mM{]}  & 25          &      \\
+\ce{Cl-} {[}mM{]} & 5              &     \\
+\ce{SO_4^{2-}} {[}mM{]}  & 5        &         \\
+\ce{Ca^{2+}} {[}mM{]} & 0.5         &          \\
+\ce{SiO2} {[}mM{]} & 1.25           &        \\
+\ce{HCO_3^-} {[}mM{]} & 5.9          &      \\
+pH & 9.75 & 9.75\\
+\ce{Cl-}/Anion ratio & & \\
+\end{tabular}
+\end{table}
+
+
+

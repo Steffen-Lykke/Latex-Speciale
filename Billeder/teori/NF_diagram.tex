@@ -1,0 +1,65 @@
+\begin{tikzpicture}
+\coordinate (A) at (13,0);
+\coordinate (B) at (2,2);
+\coordinate (C) at (3.5,3.5);
+\coordinate (NF1) at (3.5,5);
+\coordinate (NF2) at (4,4.35);
+\coordinate (NF3) at (6,3.55);
+\coordinate (NF4) at (8.5,3.5);
+\draw  (0,0) node[below]{$x$} --(A);
+
+\draw (0,2)node[above]{$c_f$}--(B);
+\draw (B) to[out=0,in=265] (C) node[left]{$c_m$};
+\draw (C)++(0,1.5)node[left]{$c_{i,0}$} to[out=300,in=180] (NF4) node[right]{$c_{i,N}$};
+\draw (8.5,1)--node[above]{$c_p$}++(2,0);
+
+\draw[dashed] (B)--+(0,5)--+(0,-2) node[below]{$\delta$};
+
+\draw[pattern = dots] (C)++(0,-3.5) rectangle +(5,7);
+\fill[blue,opacity=0.3] (C)++(0,-3.5) rectangle +(5,7);
+\filldraw[black!70] (NF1) circle (0.1cm);
+\filldraw[black!70] (NF2) circle (0.1cm);
+\filldraw[black!70] (NF3) circle (0.1cm);
+\filldraw[black!70] (NF4) circle (0.1cm);
+% \draw[   decoration={markings,
+%         mark=at position 1 with {\arrow[scale=2.5,>=latex]{>}}
+%         },
+%     postaction={decorate}] (5.5,4)--node[above]{$J\cdot c$}++(1.5,0);
+% \draw[   decoration={markings,
+%         mark=at position 1 with {\arrow[scale=2.5,>=latex]{>}}
+%         },
+%     postaction={decorate}] (7.5,1)--node[above]{$D\cdot \frac{dc}{dx}$}++(-1.5,0);
+
+% \draw[   decoration={markings,
+%         mark=at position 1 with {\arrow[scale=2.5,>=latex]{>}}
+%         },
+%     postaction={decorate}] (9.5,4)--node[above]{$J\cdot c_p$}++(1.5,0);
+
+\node at (1,6) {Bulk Feed};
+\node at (2.8,6) {CP};
+\node[draw, fill=white] at (6,6) {Membrane Active Layer};
+\node at (9.5,6) {Permeate};
+\node[above right=2pt,draw, fill=white] at (NF2) {$c_{i,1}$};
+\node[above right=2pt,draw, fill=white] at (NF3) {$c_{i,n}$};
+%\node at (6.6,6.2) {Boundary};
+%\node at (6.6,5.8) {Layer};
+
+%\draw [decorate,
+%     decoration = {calligraphic brace}] (3,-1)--(2,-1);
+    
+\draw [decorate,
+    decoration = {brace,amplitude=5pt}] (4,-0.1)--++(-1,0);
+\node at (3.5,-0.6) {$\phi_S\phi_{Don}\phi_{DE}$};
+\draw [decorate,
+    decoration = {brace,amplitude=5pt}] (9,-0.1)--++(-1,0);
+\node at (8.5,-0.6) {$\phi_S\phi_{Don}\phi_{DE}$};
+
+
+\draw[white,fill=white] (4,0.74) rectangle +(3.5,0.52);
+\node at (6,1) {ENP};
+\draw  (4,1.26)  -- +(3.5,0);
+\draw  (4,0.74)  -- +(3.5,0);
+\fill[white] (7.5,0.74) --(7.5,1.26)--(8,0.99)--cycle; 
+\draw  (7.33,0.64)  -- (8,1);
+\draw  (7.33,1.36)  -- (8,1);
+\end{tikzpicture}
